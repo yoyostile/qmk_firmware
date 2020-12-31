@@ -56,6 +56,8 @@ layer_state_t layer_state_set_user(layer_state_t state) {
       rgblight_sethsv_noeeprom_teal();
       break;
   }
+  rgblight_mode_noeeprom(1);
+
   return state;
 }
 
@@ -80,10 +82,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MEDIA] = LAYOUT_60_ansi_split_bs_rshift(
  //    _0       _1       _2       _3       _4        _5       _6       _7       _8       _9       _A       _B       _C       _D         _E
-/*0_*/ KC_SLEP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS,
+/*0_*/ KC_SLEP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   RGB_TOG,
 /*1_*/ KC_TRNS, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MAGIC_TOGGLE_NKRO,
 /*2_*/ KC_TRNS, KC_VOLD, KC_VOLU, KC_MUTE, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 /*3_*/ KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,
-/*4_*/ KC_TRNS, KC_TRNS,          KC_TRNS,                    KC_TRNS,                            KC_TRNS, KC_TRNS,          KC_TRNS,   KC_TRNS
+/*4_*/ EEPROM_RESET, KC_TRNS,          KC_TRNS,                    KC_TRNS,                            KC_TRNS, KC_TRNS,          KC_TRNS,   KC_TRNS
   )
 };
