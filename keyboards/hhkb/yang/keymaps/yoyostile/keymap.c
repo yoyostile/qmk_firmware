@@ -10,10 +10,10 @@
 #define BATTERY_EMPTY 326
 
 enum custom_keycodes {
+  KC_VBAT = SAFE_RANGE,
   KC_TRP_GRV,
   KC_BSPC_DEL,
   KC_OSX_LOCK,
-  KC_VBAT
 };
 
 uint32_t adafruit_ble_read_battery_voltage(void);
@@ -81,8 +81,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_MEDIA] = LAYOUT_60_hhkb(
  //    _0       _1       _2       _3       _4        _5       _6       _7       _8       _9       _A       _B       _C       _D         _E
-/*0_*/ KC_OSX_LOCK, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_VBAT,
-/*1_*/ KC_TRNS, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MAGIC_TOGGLE_NKRO,
+/*0_*/ KC_OSX_LOCK, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_VBAT,
+/*1_*/ KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 /*2_*/ EEPROM_RESET, KC_VOLD, KC_VOLU, KC_MUTE, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
 /*3_*/ KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,
 /*4_*/         KC_TRNS,          KC_TRNS,                    KC_TRNS,                             KC_TRNS,          KC_TRNS
