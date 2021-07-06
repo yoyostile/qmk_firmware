@@ -144,10 +144,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*4_*/ KC_SHIT_TALK, KC_LALT,    KC_LGUI,    _______,    KC_SPC,     _______,    _______,    KC_TRNS,    _______,    KC_RGUI,       KC_RCTL),
 
     [_MEDIA] = LAYOUT(
- //    _0           _1       _2       _3       _4        _5       _6       _7       _8       _9       _A       _B       _C       _D         _E
-/*0_*/ KC_OSX_LOCK, RESET, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   RGB_TOG,
-/*1_*/ KC_TRNS, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MAGIC_TOGGLE_NKRO,
-/*2_*/ KC_CAPS, KC_VOLD, KC_VOLU, KC_MUTE, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, _______, KC_TRNS,
-/*3_*/ KC_TRNS, KC_NO, KC_MPRV, KC_MPLY, KC_MNXT, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   _______, KC_TRNS, KC_TRNS,
-/*4_*/ EEPROM_RESET, KC_TRNS, KC_TRNS, _______, KC_TRNS, _______, _______, KC_TRNS, _______, KC_TRNS,   KC_TRNS)
+ //    _0             _1       _2       _3       _4        _5       _6       _7       _8       _9       _A       _B       _C       _D         _E
+/*0_*/ KC_OSX_LOCK,   RESET, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   RGB_TOG,
+/*1_*/ KC_TRNS,       KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, MAGIC_TOGGLE_NKRO,
+/*2_*/ KC_CAPS,       KC_VOLD, KC_VOLU, KC_MUTE, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, _______, KC_TRNS,
+/*3_*/ KC_TRNS,       KC_MPRV, KC_MPLY, KC_MNXT, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   _______, KC_TRNS, KC_TRNS,
+/*4_*/ EEPROM_RESET,  KC_TRNS, KC_TRNS, _______, KC_TRNS, _______, _______, KC_TRNS, _______, KC_TRNS,   KC_TRNS)
 };
