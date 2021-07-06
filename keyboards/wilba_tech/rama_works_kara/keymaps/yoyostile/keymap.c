@@ -113,8 +113,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*0_*/ KC_GRAVE,     KC_F1,      KC_F2,      KC_F3,      KC_F4,      KC_F5,      KC_F6,      KC_F7,      KC_F8,         KC_F9,         KC_F10,        KC_F11,        KC_F12,        KC_INS,        KC_TRP_GRV,
 /*1_*/ RCMD(KC_TAB), RCMD(KC_Q), RCMD(KC_W), RCMD(KC_E), RCMD(KC_R), RCMD(KC_T), RCMD(KC_Y), KC_PGUP,    RCMD(KC_I),    RCMD(KC_O),    RCMD(KC_P),    RCMD(KC_LBRC), RCMD(KC_RBRC), KC_DEL,
 /*2_*/ KC_LCTL,      RCMD(KC_A), RCMD(KC_S), KC_PGDN,    RCMD(KC_F), RCMD(KC_G), KC_LEFT,    KC_DOWN,    KC_UP,         KC_RIGHT,      RCMD(KC_SCLN), RCMD(KC_QUOT), RCMD(KC_ENT),
-/*3_*/ KC_TRNS,      RCMD(KC_Z), RCMD(KC_X), RCMD(KC_C), RCMD(KC_V), KC_BYEBUG,  RCMD(KC_N), RCMD(KC_M), RCMD(KC_COMM), RCMD(KC_DOT),  RCMD(KC_SLSH), RCMD(KC_RSFT), MO(_MEDIA),
-/*4_*/ KC_SHIT_TALK, KC_LGUI,                               KC_SPC,                                 KC_TRNS,   KC_RGUI),
+/*3_*/ KC_SHIT_TALK,      RCMD(KC_Z), RCMD(KC_X), RCMD(KC_C), RCMD(KC_V), KC_BYEBUG,  RCMD(KC_N), RCMD(KC_M), RCMD(KC_COMM), RCMD(KC_DOT),  RCMD(KC_SLSH), RCMD(KC_RSFT), MO(_MEDIA),
+/*4_*/ KC_LALT, KC_LGUI,                               KC_SPC,                                 KC_TRNS,   KC_RGUI),
 
 
   [_MEDIA] = LAYOUT_60_hhkb(
